@@ -1,0 +1,16 @@
+.categories{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    width: 80%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+.categories>div{
+    line-height: 1px;
+}
+.categories img{
+    height: 70px;
+    width: 70px;
+}

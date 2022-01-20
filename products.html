@@ -4,32 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/landing_page.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/products.css">
     <title>Document</title>
 </head>
 <body>
     <div class="header_container">
     </div>
-    <div class="categories">
+    <div class="products">
+        <div class="heading">
+            <span>Grocery</span>
+        </div>
+        <div class="product_categories">
+            <span>Popular</span>
+            <span>Produce</span>
+            <span>Deli & Prepared Foods</span>
+            <span>Snacks and Candy</span>
+            <span>Frozen</span>
+            <span>Bakery</span>
+            <span>Alcohol</span>
+            <span>Personal Care</span>
+            <span>Beauty</span>
+            <span>Hosehold</span>
+        </div>
+        <div class="product_lists">
+
+        </div>
     </div>
 </body>
 </html>
 
+
 <script type="module">
-    import {returnCatgories} from "./scripts/data.js";
-    import {getData,appendData} from "./scripts/main.js";
+    import {getData,appendProducts,appendData} from "./scripts/main.js";
+
     import navBar from "./components/navbar.js";
 
-    // Appending the navbar to html.
     let container = document.querySelector(".header_container");
     container.innerHTML = navBar()
-    
+
+
     // debouncing functionality.
     let debounce = document.querySelector(".debouncing");
     debounce.style.display = "none"
-    
+
     document.querySelector("#searchBar").addEventListener("keypress",(event)=>{
         debounce.style.display = "block";
         let search_term = document.querySelector("#searchBar").value;
@@ -44,22 +63,12 @@
         })
     });
 
-    
-    let categories = returnCatgories();
-    
-    let categories_div = document.querySelector(".categories");
-    for(let x in categories){
-        let div = document.createElement("div");
-        let img = document.createElement("img");
-        img.src = categories[x];
-        let p1 = document.createElement("p");
-        p1.textContent = x;
-        div.append(img,p1)
-        categories_div.append(div);
-        categories_div.addEventListener("click",()=>{
-            window.location.href = "products.html"
-        })
-    }
+    // Making the api call.
+    let api_url = "http://127.0.0.1:5000/api/products";
+    let shops_url = "http://127.0.0.1:5000/api/shops";
 
-
+    let products_div = document.querySelector(".product_lists")
+    getData(api_url).then((res)=>{
+        appendProducts(res,products_div)
+    })
 </script>

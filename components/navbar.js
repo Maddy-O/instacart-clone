@@ -15,6 +15,7 @@ function navBar(){
             <i id="cart" class="fa fa-shopping-cart">1</i>
         </div>
         </div>
+        <hr>
     `
 }
 
