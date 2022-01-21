@@ -1,6 +1,8 @@
 import {returnShops} from "./data.js";
 let shops = returnShops();
 
+let cart_items = JSON.parse(localStorage.getItem("cart_items"))||[];
+
 async function getData(url){
     try{
         let res = await fetch(url);
@@ -72,6 +74,7 @@ function appendProducts(data,location,dropdown){
 
 
 function appendModal(data,location,dropdown){
+
     location.innerHTML = "";
     let div = document.createElement("div");
     let side_div = document.createElement("div");
@@ -82,11 +85,23 @@ function appendModal(data,location,dropdown){
     p1.textContent = data['name'];
 
     let p2 = document.createElement("p")
-    p2.textContent = "$"+Math.floor(Math.random() * 5) + 1;
+    data['price'] = Math.floor(Math.random() * 10) + 1;
+    p2.textContent = "$"+data['price'];
 
     let btn = document.createElement("button")
     btn.id = "cart_btn";
     btn.textContent = "Add to Cart"
+
+    // Add to Cart functionality.
+    btn.addEventListener("click",()=>{
+        let qty = JSON.parse(localStorage.getItem("qty"));
+        qty = Number(qty);
+        data['price'] = Number(data['price'])*qty;
+        cart_items.push(data);
+        localStorage.setItem("cart_items",JSON.stringify(cart_items));
+        window.alert("Item added into the cart")
+    })
+
 
     button_div.append(dropdown,btn)
     let img = document.createElement("img");
@@ -110,6 +125,18 @@ function appendModalData(data){
        p1.textContent = name;
        let btn = document.createElement("button");
        btn.textContent = "Add to Cart";
+       btn.addEventListener("click",()=>{
+           let price = Math.floor(Math.random() * 10) + 1;
+           let obj = {
+               "img":img,
+               "name":name,
+               "price":price
+           }
+           cart_items.push(obj);
+           localStorage.setItem("cart_items",JSON.stringify(cart_items));
+           window.alert("Item added into the cart");
+           
+       })
        div.append(img1,p1,btn);
        main_div.append(div)
     });
