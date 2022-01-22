@@ -54,15 +54,25 @@
 
     var menuIcon = document.querySelector(".menu-icon");
     var sidebar = document.querySelector(".sidebar_left");
-    // sidebar.style.display = "none"
     var cart = document.querySelector("#cart_btn") ;
     var right_sidebar = document.querySelector(".sidebar_right") ;
+    var left_close = document.querySelector(".closeBtn") ;
+    var right_close = document.querySelector(".right_closeBtn") ;
+
+    sidebar.style.display = "none" ;
+    right_sidebar.style.display = "none" ;
 
     menuIcon.addEventListener("click" , function(){
-        sidebar.classList.toggle("small-sidebar");
+        sidebar.style.display = "block" ;
+    })
+    left_close.addEventListener("click" , function(){
+        sidebar.style.display = "none" ;
     })
     cart.addEventListener("click" , function(){
-        right_sidebar.classList.toggle("small-sidebar");
+        right_sidebar.style.display = "block" ;
+    })
+    right_close.addEventListener("click" , function(){
+        right_sidebar.style.display = "none" ;
     })
 
 
@@ -105,6 +115,67 @@
         })
         categories_div.append(div);
     }
+
+    let data = JSON.parse(localStorage.getItem("cart_items")) ;
+    let length = data.length ;
+    console.log("data" ,data);
+    document.getElementById("orderItam").innerText = length ;
+
+    displaycart(data) ;
+    function displaycart(data){
+        document.querySelector(".second_div").textContent = "" ;
+        data.map(function(el , id){  
+            var mdiv  = document.createElement("div") ;
+            mdiv.setAttribute("id" , "mdiv") ;
+
+            var div = document.createElement("div") ;
+            div.setAttribute("id" , "cartDiv" ) ;
+
+            var img = document.createElement("img") ;
+            img.src = el.img ;
+            img.setAttribute("id" , "cartImg" ) ;
+            
+            var name = document.createElement("p") ;
+            name.textContent = el.name ;
+            name.setAttribute("id" , "cartName" ) ;
+
+            var price = document.createElement("p") ;
+            price.innerHTML = "₹" + el.price ;
+            price.setAttribute("id" , "cartPrice" ) ;
+
+            var remove = document.createElement("button") ;
+            remove.innerText = "Remove" ;
+            remove.setAttribute("id" , "remItem");
+            remove.addEventListener("click" , function(){
+                deleteItem(el.price ,id) ;
+            })
+
+
+            div.append(img,name,price) ;
+            mdiv.append(div,remove) ;
+            document.querySelector(".second_div").append(mdiv) ;
+        });
+    }
+    
+    var count = 0 ;
+    for(let i=0 ; i<data.length ; i++){
+        var value = data[i].price ;
+            count += value ;
+    }
+    document.querySelector(".total").textContent = "₹" + count ;
+    document.querySelector(".total_chartBox").textContent = "₹" + count ;
+    console.log(count) ;
+
+    function deleteItem(price , id){
+        event.target.parentNode.remove() ;
+        data.splice(id,1) ;
+        count -= price ;
+        document.querySelector(".total").textContent = "₹" + count ;
+        document.querySelector(".total_chartBox").textContent = "₹" + count ;
+        localStorage.setItem("cart_items" , JSON.stringify(data));
+        displaycart(data) ;
+    }
+
 
 
 
