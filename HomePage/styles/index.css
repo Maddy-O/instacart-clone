@@ -626,27 +626,33 @@ h3 {
     color: #343538;
 }
 
+
+/* ------------------------------------ */
+
 footer {
     display: block;
 }
 
-.footer_div {
-    background: white;
+div {
     display: block;
 }
 
-.footer_items {
+.css-jfggi0 {
+    background: white;
+}
+
+.css-51gelt {
     color: #343538;
     padding: 0 5%;
     max-width: 1224px;
     margin: auto;
     text-align: left;
-    /* font-family: Eina, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; */
 }
 
-.footer_item_1 {
+.css-1olo608 {
     width: 100%;
     display: flex;
+    -ms-flex-flow: row;
     flex-flow: row;
     -webkit-box-pack: justify;
     justify-content: space-between;
@@ -654,17 +660,316 @@ footer {
     border-color: #E8E9EB;
 }
 
-.footer_item_1_1 {
-    width: 100%;
-    display: flex;
-    flex-flow: row;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    border-top: 1px solid;
-    border-color: #E8E9EB;
-}
-
-.footer_item_1_1_1 {
+.css-17lbjia {
     display: flex;
     flex: 1;
+}
+
+.css-y3ln0r {
+    flex: 2 0 0;
+    display: inline-block;
+}
+
+.css-k008qs {
+    display: flex;
+}
+
+.css-1n2mv2k {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css-wt9rcm {
+    height: 33px;
+    width: 33px;
+}
+
+.css-4jihg8 {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    padding: 20px 0 13px 6px;
+    margin: 0;
+}
+
+.css-1wi8ynz {
+    display: flex;
+    list-style: none;
+    padding-left: 39px;
+    margin: 0;
+}
+
+.css-j0ky73 {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 600;
+    padding: 7px 25px 7px 0;
+    display: flex;
+}
+
+.css-1n2mv2k {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css-15bjltv {
+    height: 15px;
+    width: 15px;
+    margin-right: 13px;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+element.style {
+    text-decoration: none;
+    color: #343538;
+}
+
+.css-g3vxz6 {
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    margin-bottom: 40px;
+    justify-content: space-evenly;
+}
+
+.css-u18lgt {
+    flex: 1 0 0;
+    list-style: none;
+    margin: 0;
+}
+
+.css-rv3mws-Column {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #343538;
+    padding: 20px 0 13px;
+    text-align: left;
+    margin: 0;
+    display: flex;
+}
+
+.css-1kpz6jf-Column {
+    -webkit-box-pack: justify;
+    border: 0;
+    padding: 0;
+    background: none;
+    width: 100%;
+    font-family: inherit;
+    display: none;
+}
+
+.css-197k4vg {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #343538;
+    padding: 20px 0 13px;
+    text-align: left;
+    margin: 0;
+}
+
+.css-1ak6a93 {
+    display: none;
+    margin: 25px 0;
+}
+
+.css-6b3e9e {
+    display: inline-block;
+    list-style: none;
+    padding-inline-start: inherit;
+    margin: 0;
+}
+
+.css-1iabbm7 {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: normal;
+    padding: 7px 0;
+    display: block;
+    margin: 0;
+}
+
+.css-1bbnrwx {
+    display: none;
+}
+
+.css-1leu51m {
+    padding-left: 39px;
+    padding-top: 20px;
+    padding-bottom: 48px;
+    padding-right: 80px;
+    border-top: 1px solid #E8E9EB;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css-1rr4qq7 {
+    flex: 1;
+}
+
+.css-1xvbyh8 {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    flex: 2 0 0;
+    padding: 12px 0;
+}
+
+.css-1rdt7gn {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css-15cgfu3 {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: normal;
+    color: #343538;
+    margin-right: 24px;
+}
+
+.css-1zk5jg {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    width: 58px;
+    height: 32px;
+}
+
+.css-1xzayah {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 58px;
+    transform: scale(1.8125, 1);
+    opacity: 0;
+    outline: none;
+    appearance: none;
+}
+
+css-154s8p4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+    background-color: #C7C8CD;
+    transition: background-color 100ms ease-in-out;
+    pointer-events: none;
+}
+
+.css-51gelt {
+    color: #343538;
+    padding: 0 5%;
+    max-width: 1224px;
+    margin: auto;
+    text-align: left;
+}
+
+.css-1e91xje {
+    display: flex;
+    flex: 1;
+}
+
+.css-y3ln0r {
+    flex: 2 0 0;
+    display: inline-block;
+}
+
+.css-k008qs {
+    display: flex;
+}
+
+.css-1p0sodg {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    padding: 20px 0 13px 39px;
+    margin: 0;
+}
+
+.css-1wi8ynz {
+    display: flex;
+    list-style: none;
+    padding-left: 39px;
+    margin: 0;
+}
+
+.css-l3g9bm {
+    display: flex;
+    flex-flow: row;
+    flex: 2;
+    margin: 2px 0 20px;
+}
+
+.css-b9gs4y {
+    flex: 3 0 0;
+    list-style: none;
+    padding: 0 5% 0 0;
+}
+
+.css-19590t {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.css-5sm6eo {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 600;
+    padding: 20px 32px 0 0;
+}
+
+.css-1mj7m16 {
+    flex: 1 0 0;
+    display: inline-block;
+    list-style: none;
+}
+
+.css-1fpp7mr {
+    display: flex;
+    list-style: none;
+    padding-inline-start: inherit;
+    margin: 0;
+}
+
+.css-1tagcp7 {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 600;
+    padding: 20px 14px 0 0;
+}
+
+.css-1pwg48o {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+}
+
+.css-8qq0um {
+    margin-bottom: 40px;
+    padding-left: 39px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #72767E;
 }
