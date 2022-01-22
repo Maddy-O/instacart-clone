@@ -146,4 +146,11 @@ window.onclick = function(event) {
   }
 }
 
+// Routing to the checkout page.
+document.querySelector("#cart").addEventListener("click",()=>{
+    if(cart_items.length == 0){
+        return
+    }
+    window.location.href = "./checkout/checkout.html"
+})
 </script>
