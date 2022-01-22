@@ -14,7 +14,7 @@
     </div>
     <div class="products">
         <div class="heading">
-            <span>Grocery</span>
+            <span id="cat_span"></span>
         </div>
         <div class="product_categories">
             <span>Popular</span>
@@ -39,6 +39,7 @@
             <span class="close">&times;</span>
             <div class="display_content">
             </div>    
+            <h3>Recommendations</h3>
             <div class="recommended">
                 
             </div>
@@ -65,12 +66,24 @@
     let dropdown = document.querySelector("#qty");
     dropdown.style.display = "none"
     
+
     import navBar from "./components/navbar.js";
 
+    // Changing the title and the bg according to selected category.
+    let display_obj = JSON.parse(localStorage.getItem("cat_obj"))||{};
+    document.querySelector("#cat_span").textContent = display_obj['name'];
+    document.querySelector(".heading").style.backgroundImage = `url(${display_obj['bg_img']})`;
+
+    // Appending the navbar into the HTML.
     let container = document.querySelector(".header_container");
     container.innerHTML = navBar()
 
+    // Displaying the number of cart items.
+    let cart_items = JSON.parse(localStorage.getItem("cart_items"))||[];
+    let qty_span = document.querySelector("#quantity");
+    qty_span.textContent = cart_items.length;
 
+    
     // debouncing functionality.
     let debounce = document.querySelector(".debouncing");
     debounce.style.display = "none"
@@ -90,7 +103,13 @@
     });
 
     // Making the api call.
-    let api_url = "http://127.0.0.1:5000/api/products";
+    let cat_name = display_obj['name'];
+    let api_url = `http://127.0.0.1:5000/api/products`;
+
+    if(cat_name == "Grocery" || cat_name == "Alcohol" || cat_name == "Pets"){
+        api_url = `http://127.0.0.1:5000/api/${display_obj['name']}`;
+    }
+    
     let shops_url = "http://127.0.0.1:5000/api/shops";
 
     let products_div = document.querySelector(".product_lists")

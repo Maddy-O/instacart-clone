@@ -51,6 +51,12 @@
     let container = document.querySelector(".header_container");
     container.innerHTML = navBar()
     
+    // Displaying the number of cart items.
+    let cart_items = JSON.parse(localStorage.getItem("cart_items"))||[];
+    let qty_span = document.querySelector("#quantity");
+    qty_span.textContent = cart_items.length;
+
+    
     // debouncing functionality.
     let debounce = document.querySelector(".debouncing");
     debounce.style.display = "none"
@@ -71,19 +77,23 @@
 
     
     let categories = returnCatgories();
-    
     let categories_div = document.querySelector(".categories");
     for(let x in categories){
         let div = document.createElement("div");
         let img = document.createElement("img");
-        img.src = categories[x];
+        img.src = categories[x]['img'];
         let p1 = document.createElement("p");
-        p1.textContent = x;
-        div.append(img,p1)
-        categories_div.append(div);
-        categories_div.addEventListener("click",()=>{
+        p1.textContent = categories[x]['name'];
+        div.append(img,p1);
+        div.addEventListener("click",()=>{
+            let obj = {
+                "name":categories[x]['name'],
+                "bg_img":categories[x]['bg_img']
+            }
+            localStorage.setItem("cat_obj",JSON.stringify(obj))
             window.location.href = "products.html"
-        });
+        })
+        categories_div.append(div);
     }
 
 

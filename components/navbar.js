@@ -12,7 +12,9 @@ function navBar(){
         <div class="side_buttons">
             <i id="map" class="fa fa-map-marker">Address</i>
             <button type="submit">Login</button>
-            <i id="cart" class="fa fa-shopping-cart">1</i>
+            <i id="cart" class="fa fa-shopping-cart">
+            <span id="quantity"></span>
+            </i>
         </div>
         </div>
         <hr>

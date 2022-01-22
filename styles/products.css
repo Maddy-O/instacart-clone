@@ -1,5 +1,5 @@
 .heading{
-    background-image: url(https://www.instacart.com/assets/hubs/category_grocery_desktop-55e4a66309ac045b399fdb52a1a2bd0a8d0b2c31e7aa2305e167344709ca806d.jpg);
+    /* background-image: url(https://www.instacart.com/assets/hubs/category_grocery_desktop-55e4a66309ac045b399fdb52a1a2bd0a8d0b2c31e7aa2305e167344709ca806d.jpg); */
     background-size: contain;
     background-repeat: repeat-x;
     height: 200px;
@@ -90,7 +90,7 @@ body{
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s;
-    overflow: scroll;
+    overflow-y: scroll;
   }
   
   /* The Close Button */
@@ -143,10 +143,17 @@ body{
 .recommended{
     display: grid;
     grid-template-columns: repeat(4,20%);
-    grid-gap: 50px;
+    grid-gap: 60px;
     margin-top: 30px;
 }
 
+.recommended button{
+    border: none;
+    color:white;
+    background: #0AAD0A;
+    padding: 5px 30px;
+    border-radius: 10px;
+}
 .recommended img{
     width: 80%;
     height: 80%;
