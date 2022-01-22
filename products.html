@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/navbar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/products.css">
+    <link rel="stylesheet" href="./styles/navbar_products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
     <div class="header_container">
+        
     </div>
     <div class="products">
         <div class="heading">
@@ -63,27 +64,28 @@
 
 <script type="module">
     import {getData,appendProducts,appendData} from "./scripts/main.js";
+    // import navBar from "./components/navbar_products.js";
+
     let dropdown = document.querySelector("#qty");
     dropdown.style.display = "none"
     
 
-    import navBar from "./components/navbar.js";
+    import navBar from "./components/navbar_products.js";
 
     // Changing the title and the bg according to selected category.
     let display_obj = JSON.parse(localStorage.getItem("cat_obj"))||{};
     document.querySelector("#cat_span").textContent = display_obj['name'];
     document.querySelector(".heading").style.backgroundImage = `url(${display_obj['bg_img']})`;
 
-    // Appending the navbar into the HTML.
+    // Appending the navbar into html.
     let container = document.querySelector(".header_container");
     container.innerHTML = navBar()
 
-    // Displaying the number of cart items.
+    // Displaying the number of items.
     let cart_items = JSON.parse(localStorage.getItem("cart_items"))||[];
     let qty_span = document.querySelector("#quantity");
     qty_span.textContent = cart_items.length;
 
-    
     // debouncing functionality.
     let debounce = document.querySelector(".debouncing");
     debounce.style.display = "none"
@@ -101,7 +103,7 @@
             appendData(res.meals,debounce)
         })
     });
-
+    
     // Making the api call.
     let cat_name = display_obj['name'];
     let api_url = `http://127.0.0.1:5000/api/products`;

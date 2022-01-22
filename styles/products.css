@@ -1,5 +1,5 @@
 .heading{
-    /* background-image: url(https://www.instacart.com/assets/hubs/category_grocery_desktop-55e4a66309ac045b399fdb52a1a2bd0a8d0b2c31e7aa2305e167344709ca806d.jpg); */
+    display: flex;
     background-size: contain;
     background-repeat: repeat-x;
     height: 200px;
@@ -22,18 +22,21 @@ body{
     display: flex;
     text-align: center;
     width: 90%;
+    font-size: 15px;
     margin: auto;
     justify-content: space-around;
 }
 .products>div>div img{
-    width: 90%;
-    height: 65%;
+    width: 80%;
+    height: 60%;
 }
 .product_categories{
     margin-top: 30px;
     width: 80%;
     display: flex;
     margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
 }
 .product_categories>span{
     background: #F6F7F8;
@@ -155,6 +158,8 @@ body{
     border-radius: 10px;
 }
 .recommended img{
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
 }
+
+

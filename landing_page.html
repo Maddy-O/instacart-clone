@@ -51,10 +51,20 @@
     let container = document.querySelector(".header_container");
     container.innerHTML = navBar()
     
-    // Displaying the number of cart items.
-    let cart_items = JSON.parse(localStorage.getItem("cart_items"))||[];
-    let qty_span = document.querySelector("#quantity");
-    qty_span.textContent = cart_items.length;
+
+    var menuIcon = document.querySelector(".menu-icon");
+    var sidebar = document.querySelector(".sidebar_left");
+    // sidebar.style.display = "none"
+    var cart = document.querySelector("#cart_btn") ;
+    var right_sidebar = document.querySelector(".sidebar_right") ;
+
+    menuIcon.addEventListener("click" , function(){
+        sidebar.classList.toggle("small-sidebar");
+    })
+    cart.addEventListener("click" , function(){
+        right_sidebar.classList.toggle("small-sidebar");
+    })
+
 
     
     // debouncing functionality.
