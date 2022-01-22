@@ -33,11 +33,11 @@
                     <div class="location_div">
                         <div class="location_1">
                             <img src="https://img.icons8.com/material-rounded/24/000000/marker.png" />
-                            <form class="address">
+                            <div class="address">
                                 <input type="text" id="address_input" placeholder="Enter your address">
                                 <span>Enter your address first</span>
-                            </form>
-                            <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/000000/external-forward-arrow-button-email-color-tal-revivo.png" />
+                            </div>
+                            <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/000000/external-forward-arrow-button-email-color-tal-revivo.png" id="address_input_img" style="cursor: pointer;"/>
                         </div>
                     </div>
                 </div>
@@ -372,6 +372,18 @@
 </html>
 <script type="module">
 
-    import header from "./components/header.js"; let top = document.getElementById("bar"); top.innerHTML=header(); import footer from "./components/footer.js"; let base = document.getElementById("foot"); base.innerHTML=footer();
+    import header from "./components/header.js"; let top = document.getElementById("bar");
+    top.innerHTML=header(); import footer from "./components/footer.js";
+    let base = document.getElementById("foot");
+    base.innerHTML=footer();
+
+
+    document.getElementById("address_input_img").addEventListener(onclick,click());
+
+    function click(event){
+        // event.preventDefault();
+        let add = document.getElementById("address_input").value;
+        console.log(add);
+    }
 
 </script>
