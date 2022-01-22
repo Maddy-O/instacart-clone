@@ -29,13 +29,7 @@ function footer(term) {
                                 <div class="css-u18lgt">
                                     <h2 class="css-rv3mws-Column">Top departments</h2>
                                     <h2><button aria-controls="aria-Topdepartments" aria-expanded="false" class="css-1kpz6jf-Column"><span class="css-197k4vg">Top
-                                                departments</span><svg width="20" height="20" viewBox="0 0 24 24"
-                                                fill="#343538" xmlns="http://www.w3.org/2000/svg" size="20"
-                                                class="css-1ak6a93">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M12 13.379l5.94-5.94a1.5 1.5 0 012.12 2.122l-7 7a1.5 1.5 0 01-2.12 0l-7-7a1.5 1.5 0 112.12-2.122L12 13.38z">
-                                                </path>
-                                            </svg></button></h2>
+                                                departments</span></button></h2>
                                     <div id="aria-Topdepartments" class="css-1rf06g9">
                                         <ul class="css-6b3e9e">
                                             <li class="css-1iabbm7"><a style="text-decoration:none;color:#343538" href="https://www.instacart.com/categories/316-food/317-fresh-produce">Fresh
@@ -63,13 +57,7 @@ function footer(term) {
                                 <div class="css-u18lgt">
                                     <h2 class="css-rv3mws-Column">More departments</h2>
                                     <h2><button aria-controls="aria-Moredepartments" aria-expanded="false" class="css-1kpz6jf-Column"><span class="css-197k4vg">More
-                                                departments</span><svg width="20" height="20" viewBox="0 0 24 24"
-                                                fill="#343538" xmlns="http://www.w3.org/2000/svg" size="20"
-                                                class="css-1ak6a93">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M12 13.379l5.94-5.94a1.5 1.5 0 012.12 2.122l-7 7a1.5 1.5 0 01-2.12 0l-7-7a1.5 1.5 0 112.12-2.122L12 13.38z">
-                                                </path>
-                                            </svg></button></h2>
+                                                departments</span></button></h2>
                                     <div id="aria-Moredepartments" class="css-1rf06g9">
                                         <ul class="css-6b3e9e">
                                             <li class="css-1iabbm7"><a style="text-decoration:none;color:#343538" href="https://www.instacart.com/categories/2-alcohol">Alcohol</a>
@@ -97,13 +85,7 @@ function footer(term) {
                                 <div class="css-u18lgt">
                                     <h2 class="css-rv3mws-Column">Instacart programs</h2>
                                     <h2><button aria-controls="aria-Instacartprograms" aria-expanded="false" class="css-1kpz6jf-Column"><span class="css-197k4vg">Instacart
-                                                programs</span><svg width="20" height="20" viewBox="0 0 24 24"
-                                                fill="#343538" xmlns="http://www.w3.org/2000/svg" size="20"
-                                                class="css-1ak6a93">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M12 13.379l5.94-5.94a1.5 1.5 0 012.12 2.122l-7 7a1.5 1.5 0 01-2.12 0l-7-7a1.5 1.5 0 112.12-2.122L12 13.38z">
-                                                </path>
-                                            </svg></button></h2>
+                                                programs</span></button></h2>
                                     <div id="aria-Instacartprograms" class="css-1rf06g9">
                                         <ul class="css-6b3e9e">
                                             <li class="css-1iabbm7"><a style="text-decoration:none;color:#343538" href="https://www.instacart.com/gift-cards">Gift Cards</a></li>
@@ -122,12 +104,7 @@ function footer(term) {
                                 <div class="css-u18lgt">
                                     <h2 class="css-rv3mws-Column">Get to know us</h2>
                                     <h2><button aria-controls="aria-Gettoknowus" aria-expanded="false" class="css-1kpz6jf-Column"><span class="css-197k4vg">Get to know
-                                                us</span><svg width="20" height="20" viewBox="0 0 24 24" fill="#343538"
-                                                xmlns="http://www.w3.org/2000/svg" size="20" class="css-1ak6a93">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M12 13.379l5.94-5.94a1.5 1.5 0 012.12 2.122l-7 7a1.5 1.5 0 01-2.12 0l-7-7a1.5 1.5 0 112.12-2.122L12 13.38z">
-                                                </path>
-                                            </svg></button></h2>
+                                                us</span></button></h2>
                                     <div id="aria-Gettoknowus" class="css-1rf06g9">
                                         <ul class="css-6b3e9e">
                                             <li class="css-1iabbm7"><a style="text-decoration:none;color:#343538" href="https://instacart.com/company/newsroom">Press</a></li>
@@ -169,12 +146,7 @@ function footer(term) {
                                 <div class="css-u18lgt">
                                     <h2 class="css-rv3mws-Column">Make money with us</h2>
                                     <h2><button aria-controls="aria-Makemoneywithus" aria-expanded="false" class="css-1kpz6jf-Column"><span class="css-197k4vg">Make money with
-                                                us</span><svg width="20" height="20" viewBox="0 0 24 24" fill="#343538"
-                                                xmlns="http://www.w3.org/2000/svg" size="20" class="css-1ak6a93">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M12 13.379l5.94-5.94a1.5 1.5 0 012.12 2.122l-7 7a1.5 1.5 0 01-2.12 0l-7-7a1.5 1.5 0 112.12-2.122L12 13.38z">
-                                                </path>
-                                            </svg></button></h2>
+                                                us</span></button></h2>
                                     <div id="aria-Makemoneywithus" class="css-1rf06g9">
                                         <ul class="css-6b3e9e">
                                             <li class="css-1iabbm7"><a style="text-decoration:none;color:#343538" href="https://shoppers.instacart.com/instacart-jobs">Shopper
@@ -193,13 +165,8 @@ function footer(term) {
                             <div>
                                 <div class="css-u18lgt">
                                     <h2 class="css-rv3mws-Column">Top cities</h2>
-                                    <h2><button aria-controls="aria-Topcities" aria-expanded="false" class="css-1kpz6jf-Column"><span class="css-197k4vg">Top cities</span><svg
-                                                width="20" height="20" viewBox="0 0 24 24" fill="#343538"
-                                                xmlns="http://www.w3.org/2000/svg" size="20" class="css-1ak6a93">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M12 13.379l5.94-5.94a1.5 1.5 0 012.12 2.122l-7 7a1.5 1.5 0 01-2.12 0l-7-7a1.5 1.5 0 112.12-2.122L12 13.38z">
-                                                </path>
-                                            </svg></button></h2>
+                                    <h2><button aria-controls="aria-Topcities" aria-expanded="false" class="css-1kpz6jf-Column"><span class="css-197k4vg">Top cities</span>
+                                    </button></h2>
                                     <div id="aria-Topcities" class="css-1rf06g9">
                                         <ul class="css-6b3e9e">
                                             <li class="css-1iabbm7"><a style="text-decoration:none;color:#343538" href="https://shoppers.instacart.com/instacart-jobs-in-west-la">Los
@@ -220,13 +187,8 @@ function footer(term) {
                             <div>
                                 <div class="css-u18lgt">
                                     <h2 class="css-rv3mws-Column">More cities</h2>
-                                    <h2><button aria-controls="aria-Morecities" aria-expanded="false" class="css-1kpz6jf-Column"><span class="css-197k4vg">More cities</span><svg
-                                                width="20" height="20" viewBox="0 0 24 24" fill="#343538"
-                                                xmlns="http://www.w3.org/2000/svg" size="20" class="css-1ak6a93">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M12 13.379l5.94-5.94a1.5 1.5 0 012.12 2.122l-7 7a1.5 1.5 0 01-2.12 0l-7-7a1.5 1.5 0 112.12-2.122L12 13.38z">
-                                                </path>
-                                            </svg></button></h2>
+                                    <h2><button aria-controls="aria-Morecities" aria-expanded="false" class="css-1kpz6jf-Column"><span class="css-197k4vg">More cities</span>
+                                    </button></h2>
                                     <div id="aria-Morecities" class="css-1rf06g9">
                                         <ul class="css-6b3e9e">
                                             <li class="css-1iabbm7"><a style="text-decoration:none;color:#343538" href="https://shoppers.instacart.com/instacart-jobs-in-miami">Miami</a>
@@ -247,13 +209,8 @@ function footer(term) {
                             <div>
                                 <div class="css-u18lgt">
                                     <h2 class="css-rv3mws-Column">Shopper help</h2>
-                                    <h2><button aria-controls="aria-Shopperhelp" aria-expanded="false" class="css-1kpz6jf-Column"><span class="css-197k4vg">Shopper help</span><svg
-                                                width="20" height="20" viewBox="0 0 24 24" fill="#343538"
-                                                xmlns="http://www.w3.org/2000/svg" size="20" class="css-1ak6a93">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M12 13.379l5.94-5.94a1.5 1.5 0 012.12 2.122l-7 7a1.5 1.5 0 01-2.12 0l-7-7a1.5 1.5 0 112.12-2.122L12 13.38z">
-                                                </path>
-                                            </svg></button></h2>
+                                    <h2><button aria-controls="aria-Shopperhelp" aria-expanded="false" class="css-1kpz6jf-Column"><span class="css-197k4vg">Shopper help</span>
+                                    </button></h2>
                                     <div id="aria-Shopperhelp" class="css-1rf06g9">
                                         <ul class="css-6b3e9e">
                                             <li class="css-1iabbm7"><a style="text-decoration:none;color:#343538" href="https://shoppers.instacart.com/help/help_center/login" target="_blank" rel="noreferrer">Help</a></li>

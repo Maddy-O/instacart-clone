@@ -1,18 +1,16 @@
 body {
-    /* background-color: black; */
     margin: 0px;
-    font-family: sans-serif;
-    font-family: Eina, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
+
+/*-----------------------------------------HEADER------------------------------------------------*/
+
 #bar {
-    /* background-color: white; */
     display: block;
-    /* padding: 25px 32px; */
 }
 
 #item {
-    font-family: Eina, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: row;
@@ -43,7 +41,6 @@ body {
 }
 
 .menu>img {
-    /* border: solid red 1px; */
     width: 24px;
     height: 24px;
     fill: rgb(52, 53, 56);
@@ -114,6 +111,12 @@ body {
     text-overflow: ellipsis;
     display: block;
 }
+
+
+/*-----------------------------------------HEADER------------------------------------------------*/
+
+
+/*-----------------------------------------Main Body------------------------------------------------*/
 
 #main {
     display: block;
@@ -612,7 +615,7 @@ h3 {
     font-weight: normal;
     white-space: normal;
     text-align: left;
-    font-family: Eina, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial;
+    font-family: 'Segoe UI', Helvetica, Arial;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -627,7 +630,10 @@ h3 {
 }
 
 
-/* ------------------------------------ */
+/*-----------------------------------------Main Body------------------------------------------------*/
+
+
+/*-----------------------------------------Footer------------------------------------------------*/
 
 footer {
     display: block;
@@ -973,3 +979,6 @@ css-154s8p4 {
     font-weight: normal;
     color: #72767E;
 }
+
+
+/*-----------------------------------------Footer------------------------------------------------*/
