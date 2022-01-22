@@ -130,7 +130,7 @@ nav{
 
 /* side-bar(left) */
 .sidebar_left{
-  background: #fff;
+  /* background: #fff; */
   width: 22%;
   height: 100vh;
   /* border: 1px solid red; */
@@ -193,8 +193,10 @@ nav{
     display: none;
 }
 
+
 /* sidebar_right */
 .sidebar_right{
+    /* background: #fff; */
     width: 40%;
     /* border: 1px solid red; */
     height: 650px;
@@ -263,4 +265,5 @@ nav{
     border-radius: 10px;
     border: transparent;
 }
+
 
