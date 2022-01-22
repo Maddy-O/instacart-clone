@@ -176,7 +176,8 @@ nav{
 }
 .sidebar_left hr{
     height: 0px;
-    border: 0.1px solid rgb(216, 215, 215); 
+    border: 0.1px solid rgb(216, 215, 215);
+    margin-bottom: 10px; 
 }
 
 /* for hide side-bar */
@@ -266,4 +267,16 @@ nav{
     border: transparent;
 }
 
+.closeBtn{
+    width: 103px;
+    height: 42px;
+    text-align: center;
+    color: #098a09;
+    border: 1px solid #098a09 ;
+    background-color: white;
+    border-radius: 5px;
+}
+.closeBtn :hover{
+    cursor: pointer;
+}
 

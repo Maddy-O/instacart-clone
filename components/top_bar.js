@@ -40,6 +40,8 @@ function top_bar(){
                 <a href=""><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuGdqMpSc8wEyeG6dGIV47KK1NEvReE5vb7t4yeEp0m3x0Mbp2"><p>Try Instacart Express</p></a>
             </div>
             <hr>
+
+            <button class="closeBtn">Close</button>
         </div>
 
     <!--side-bar(right) -->
@@ -48,6 +50,7 @@ function top_bar(){
             <img src="https://www.instacart.com/image-server/63x/d2lnr5mha7bycj.cloudfront.net/warehouse/logo/314/1d952780-74c6-4fad-9d11-69924f918d22.png" id="supermarket_logo">
             <p id="supermarket_name">Times Supermarket</p>
             <p class="total">12</p>
+            <button class="right_closeBtn closeBtn">Close</button>
            </div>
            <hr>
 

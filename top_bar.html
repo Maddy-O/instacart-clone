@@ -9,6 +9,7 @@
 </head>
 <body>
       <div class="header_container"></div>
+    
 </body>
 </html>
 <script type="module">
@@ -16,17 +17,37 @@
     import top_bar from "./components/top_bar.js";
     let container = document.querySelector(".header_container");
     container.innerHTML = top_bar() ;
-
+    
     var menuIcon = document.querySelector(".menu-icon");
     var sidebar = document.querySelector(".sidebar_left");
     var cart = document.querySelector("#cart_btn") ;
     var right_sidebar = document.querySelector(".sidebar_right") ;
+    var left_close = document.querySelector(".closeBtn") ;
+    var right_close = document.querySelector(".right_closeBtn") ;
+
+    sidebar.style.display = "none" ;
+    right_sidebar.style.display = "none" ;
 
     menuIcon.addEventListener("click" , function(){
-        sidebar.classList.toggle("small-sidebar");
+        sidebar.style.display = "block" ;
+    })
+    left_close.addEventListener("click" , function(){
+        sidebar.style.display = "none" ;
     })
     cart.addEventListener("click" , function(){
-        right_sidebar.classList.toggle("small-sidebar");
+        right_sidebar.style.display = "block" ;
     })
+    right_close.addEventListener("click" , function(){
+        right_sidebar.style.display = "none" ;
+    })
+
+     
+
+    // menuIcon.addEventListener("click" , function(){
+    //     sidebar.classList.toggle("small-sidebar");
+    // })
+    // cart.addEventListener("click" , function(){
+    //     right_sidebar.classList.toggle("small-sidebar");
+    // })
 
 </script>
