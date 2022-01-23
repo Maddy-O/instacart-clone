@@ -116,7 +116,7 @@
         categories_div.append(div);
     }
 
-    let data = JSON.parse(localStorage.getItem("cart_items")) ;
+    let data = JSON.parse(localStorage.getItem("cart_items"))||[] ;
     let length = data.length ;
     console.log("data" ,data);
     document.getElementById("orderItam").innerText = length ;
