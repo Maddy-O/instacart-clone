@@ -133,7 +133,7 @@ nav{
 /* side-bar(left) */
 .sidebar_left{
   /* background: #fff; */
-  width: 30%;
+  width: 23%;
   height: 100vh;
   /* border: 1px solid red; */
   position: fixed;
@@ -180,6 +180,7 @@ nav{
 .sidebar_left hr{
     height: 0px;
     border: 0.1px solid rgb(216, 215, 215); 
+    margin-bottom: 10px;
 }
 
 /* for hide side-bar */
@@ -199,7 +200,7 @@ nav{
 
 /* sidebar_right */
 .sidebar_right{
-    /* background: #fff; */
+    background: #fff;
     width: 40%;
     /* border: 1px solid red; */
     height: 650px;
@@ -268,5 +269,49 @@ nav{
     border-radius: 10px;
     border: transparent;
 }
+.closeBtn{
+    width: 103px;
+    height: 42px;
+    text-align: center;
+    color: #098a09;
+    border: 1px solid #098a09 ;
+    background-color: white;
+    border-radius: 5px;
+}
+.closeBtn :hover{
+    cursor: pointer;
+}
+
+/* cart css */
+#mdiv{
+    display: flex;
+    justify-content: space-around;
+}
+#cartDiv{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid rgb(190, 190, 188); */
+    margin-bottom: 10px;
+    height: 70px;
+    align-items: center;
+    width: 80%;
+    margin-top: 5px;
+}
+#cartImg{
+    width: 50px;
+    height: 50px;
+}
+.go_checkout:hover{
+  cursor: pointer;
+}
+#remItem{
+    width: 70px;
+    height: 45px;
+    margin-top: 15px;
+    border: 1px solid #098a09;
+    background-color: white;
+    border-radius: 5px;
+}
+
 
 

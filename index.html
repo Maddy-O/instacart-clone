@@ -378,12 +378,26 @@
     base.innerHTML=footer();
 
 
-    document.getElementById("address_input_img").addEventListener(onclick,click());
+    document.getElementById("address_input_img").addEventListener("click",click);
 
     function click(event){
         // event.preventDefault();
         let add = document.getElementById("address_input").value;
         console.log(add);
+    }
+
+    document.querySelector(".login_btn").addEventListener("click",tab);
+    function tab(event){
+        // event.preventDefault();
+        window.location.href="login.html";
+        // console.log("lala")
+    }
+
+    document.querySelector(".signup_btn").addEventListener("click",tap);
+    function tap(event){
+        // event.preventDefault();
+        window.location.href="register.html";
+        // console.log("lala")
     }
 
 </script>
