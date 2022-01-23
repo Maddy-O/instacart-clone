@@ -35,9 +35,9 @@ services via a website and mobile app.
 
 ## Authors
 
-- [yashsakalley-1997](https://github.com/yashsakalley-1997)
-- [Maddy-O](https://github.com/Maddy-O)
-- [Dhruv-bhardwaj99](https://github.com/Dhruv-bhardwaj99)
+- [Yash Sakalley](https://github.com/yashsakalley-1997)
+- [Madan Mohan](https://github.com/Maddy-O)
+- [Dhruv Bhardwaj](https://github.com/Dhruv-bhardwaj99)
 - [Paritosh Parihar](https://github.com/i-am-parihar)
 - [Arpan Kushwah](https://github.com/arpankushwah8)
 
