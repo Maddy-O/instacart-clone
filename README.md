@@ -39,6 +39,7 @@ services via a website and mobile app.
 - [Maddy-O](https://github.com/Maddy-O)
 - [Dhruv-bhardwaj99](https://github.com/Dhruv-bhardwaj99)
 - [Paritosh Parihar](https://github.com/i-am-parihar)
+- [Arpan Kushwah](https://github.com/arpankushwah8)
 
 
 
@@ -61,6 +62,7 @@ services via a website and mobile app.
 ## Walkthrough
 
 - The first page is the index.html page where the basic info about instacart can be displayed, including header and footer.
+- In the header component of the index.html iteself we are having sign up and login functionalities.
 - The second page is the landing page which will be displayed once the user logs in.
 - On clicking on any of the category on landing page we route to the products page where products are filtered according to the category selected.
 - From the products page itself. Items can be added into the cart as shown in the screenshot.
